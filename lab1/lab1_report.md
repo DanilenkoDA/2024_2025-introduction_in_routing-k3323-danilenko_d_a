@@ -6,7 +6,7 @@ Group: K3323
 Author: Danilenko Dmitriy Alexandrovich  
 Lab: Lab1  
 Date of create: 14.09.2024   
-Date of finished:    
+Date of finished: 28.09.2024  
  
 # Лабораторная работ №1 "Установка ContainerLab и развертывание тестовой сети связи"
 
@@ -156,3 +156,5 @@ add disabled=no interface=bridge20
 set name=SW02_02
 
 ```
+
+![alt text](https://github.com/DanilenkoDA/2024_2025-introduction_in_routing-k3323-danilenko_d_a/blob/main/lab1/ping_results/1.png)
