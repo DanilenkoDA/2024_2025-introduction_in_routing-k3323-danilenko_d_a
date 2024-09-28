@@ -1,0 +1,40 @@
+name: lab_1
+prefix: ""
+
+mgmt:
+  network: statics
+  ipv4-subnet: 192.168.50.0/24
+
+topology:
+  kinds:
+    vr-mikrotik_ros:
+      image: vrnetlab/vr-routeros:6.47.9
+    linux:
+      image: ubuntu:latest
+
+  nodes:
+    RO:
+      kind: vr-mikrotik_ros
+      mgmt-ipv4: 192.168.50.2
+    SW01:
+      kind: vr-mikrotik_ros
+      mgmt-ipv4: 192.168.50.3
+    SW02_01:
+      kind: vr-mikrotik_ros
+      mgmt-ipv4: 192.168.50.4
+    SW02_02:
+      kind: vr-mikrotik_ros
+      mgmt-ipv4: 192.168.50.5
+    PC1:
+      kind: linux
+      mgmt-ipv4: 192.168.50.6
+    PC2:
+      kind: linux
+      mgmt-ipv4: 192.168.50.7
+
+  links:
+    - endpoints: ["SW01:eth2","RO:eth2"]
+    - endpoints: ["SW02_01:eth2","SW01:eth3"]
+    - endpoints: ["SW02_02:eth2","SW01:eth4"]
+    - endpoints: ["PC1:eth2","SW02_01:eth3"]
+    - endpoints: ["PC2:eth2","SW02_02:eth3"]
