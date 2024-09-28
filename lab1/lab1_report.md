@@ -5,14 +5,14 @@ Year: 2024/2025
 Group: K3323
 Author: Danilenko Dmitriy Alexandrovich
 Lab: Lab1
-Date of create: 14.09.2024
-Date of finished:
+Date of create: 14.09.2024  
+Date of finished:  
 
 # Лабораторная работ №1 "Установка ContainerLab и развертывание тестовой сети связи"
 
-В лабораторной познакомились с инструментом ContainerLab и развернули первую сеть  
+В лабораторной познакомились с инструментом ContainerLab и развернули первую сеть
 
-Использовали VLAN и DHCP  
+Использовали VLAN и DHCP
 
 ## Конфиги устройств:
 
@@ -93,7 +93,6 @@ set name=SW01
 
 ```
 
-
 ### SW02_01
 
 ```
@@ -126,7 +125,6 @@ set name=SW02_01
 
 ```
 
-
 ### SW02_02
 
 ```
@@ -156,7 +154,5 @@ add disabled=no interface=ether1
 add disabled=no interface=bridge20
 /system identity
 set name=SW02_02
-
-```
 
 ```
