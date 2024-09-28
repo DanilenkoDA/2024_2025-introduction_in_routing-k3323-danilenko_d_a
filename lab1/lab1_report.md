@@ -156,5 +156,9 @@ add disabled=no interface=bridge20
 set name=SW02_02
 
 ```
-
+## Результат пингов
 ![alt text](https://github.com/DanilenkoDA/2024_2025-introduction_in_routing-k3323-danilenko_d_a/blob/main/lab1/ping_results/1.png)
+![alt text](https://github.com/DanilenkoDA/2024_2025-introduction_in_routing-k3323-danilenko_d_a/blob/main/lab1/ping_results/2.png)
+![alt text](https://github.com/DanilenkoDA/2024_2025-introduction_in_routing-k3323-danilenko_d_a/blob/main/lab1/ping_results/3.png)
+![alt text](https://github.com/DanilenkoDA/2024_2025-introduction_in_routing-k3323-danilenko_d_a/blob/main/lab1/ping_results/4.png)
+![alt text](https://github.com/DanilenkoDA/2024_2025-introduction_in_routing-k3323-danilenko_d_a/blob/main/lab1/ping_results/5.png)
