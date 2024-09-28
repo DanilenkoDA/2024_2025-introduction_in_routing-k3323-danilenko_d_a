@@ -1,13 +1,13 @@
-University: [ITMO University](https://itmo.ru/ru/)
-Faculty: [FICT](https://fict.itmo.ru)
-Course: [Introduction in routing](https://github.com/itmo-ict-faculty/introduction-in-routing)
-Year: 2024/2025
-Group: K3323
-Author: Danilenko Dmitriy Alexandrovich
-Lab: Lab1
-Date of create: 14.09.2024  
-Date of finished:  
-
+University: [ITMO University](https://itmo.ru/ru/)  
+Faculty: [FICT](https://fict.itmo.ru)  
+Course: [Introduction in routing](https://github.com/itmo-ict-faculty/introduction-in-routing)  
+Year: 2024/2025  
+Group: K3323  
+Author: Danilenko Dmitriy Alexandrovich  
+Lab: Lab1  
+Date of create: 14.09.2024   
+Date of finished:    
+ 
 # Лабораторная работ №1 "Установка ContainerLab и развертывание тестовой сети связи"
 
 В лабораторной познакомились с инструментом ContainerLab и развернули первую сеть
