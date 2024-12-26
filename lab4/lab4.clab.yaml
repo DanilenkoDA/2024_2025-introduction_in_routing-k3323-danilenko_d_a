@@ -1,0 +1,57 @@
+name: lab4
+
+mgmt:
+  network: mgmt-net
+  ipv4-subnet: 192.168.50.0/24
+
+topology:
+  kinds: 
+   vr-ros:
+    image: vrnetlab/vr-routeros:6.47.9  
+   linux:
+    image: ghcr.io/hellt/network-multitool
+
+  nodes:
+    R01.NY:
+      kind: vr-ros
+      mgmt-ipv4: 192.168.50.2
+      startup-config: /root/lab_4/R01NY.rsc
+    R01.LND:
+      kind: vr-ros
+      mgmt-ipv4: 192.168.50.3
+      startup-config: /root/lab_4/R01LND.rsc
+    R01.HKI:
+      kind: vr-ros
+      mgmt-ipv4: 192.168.50.4
+      startup-config: /root/lab_4/R01HKI.rsc
+    R01.SPB:
+      kind: vr-ros
+      mgmt-ipv4: 192.168.50.5
+      startup-config: /root/lab_4/R01SPB.rsc
+    R01.SVL:
+      kind: vr-ros
+      mgmt-ipv4: 192.168.50.6
+      startup-config: /root/lab_4/R01SVL.rsc
+    R01.LBN:
+      kind: vr-ros
+      mgmt-ipv4: 192.168.50.7
+      startup-config: /root/lab_4/R01LBN.rsc
+    PC1:
+      kind: linux
+      mgmt-ipv4: 192.168.50.8
+    PC2:
+      kind: linux 
+      mgmt-ipv4: 192.168.50.9
+    PC3:
+      kind: linux 
+      mgmt-ipv4: 192.168.50.10
+  links:
+    - endpoints: ["R01.SPB:eth2", "PC1:eth2"]
+    - endpoints: ["R01.SPB:eth3", "R01.HKI:eth2"]
+    - endpoints: ["R01.HKI:eth3", "R01.LBN:eth2"]
+    - endpoints: ["R01.HKI:eth4", "R01.LND:eth2"]
+    - endpoints: ["R01.LND:eth3", "R01.LBN:eth4"]
+    - endpoints: ["R01.LND:eth4", "R01.NY:eth2"]
+    - endpoints: ["R01.NY:eth3", "PC2:eth2"]
+    - endpoints: ["R01.LBN:eth3", "R01.SVL:eth2"]
+    - endpoints: ["R01.SVL:eth3", "PC3:eth2"]
